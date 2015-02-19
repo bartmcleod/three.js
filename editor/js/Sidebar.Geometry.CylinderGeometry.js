@@ -34,15 +34,15 @@ Sidebar.Geometry.CylinderGeometry = function ( signals, object ) {
 
 	container.add( heightRow );
 
-	// radialSegments
+	// radiusSegments
 
-	var radialSegmentsRow = new UI.Panel();
-	var radialSegments = new UI.Integer( geometry.radialSegments ).setRange( 1, Infinity ).onChange( update );
+	var radiusSegmentsRow = new UI.Panel();
+	var radiusSegments = new UI.Integer( geometry.radialSegments ).setRange( 1, Infinity ).onChange( update );
 
-	radialSegmentsRow.add( new UI.Text( 'Radial segments' ).setWidth( '90px' ) );
-	radialSegmentsRow.add( radialSegments );
+	radiusSegmentsRow.add( new UI.Text( 'Radius segments' ).setWidth( '90px' ) );
+	radiusSegmentsRow.add( radiusSegments );
 
-	container.add( radialSegmentsRow );
+	container.add( radiusSegmentsRow );
 
 	// heightSegments
 
@@ -76,7 +76,7 @@ Sidebar.Geometry.CylinderGeometry = function ( signals, object ) {
 			radiusTop.getValue(),
 			radiusBottom.getValue(),
 			height.getValue(),
-			radialSegments.getValue(),
+			radiusSegments.getValue(),
 			heightSegments.getValue(),
 			openEnded.getValue()
 		);

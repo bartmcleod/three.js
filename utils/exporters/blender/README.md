@@ -31,4 +31,4 @@ By default, this should look like:
 
 ## Usage
 
-Activate the Import-Export addon under "User Preferences" > "Addons" and then use the regular Import and Export menu within Blender, select `Three.js (js)`.
+Use the regular Import and Export menu within Blender, select `Three.js (js)`.
